@@ -8,6 +8,7 @@
 
 import UIKit
 import Cache
+
 import HandyJSON
 class User:HandyJSON {
     static let key = "user.key"
