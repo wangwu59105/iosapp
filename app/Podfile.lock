@@ -2,23 +2,27 @@ PODS:
   - Alamofire (4.7.3)
   - Cache (5.2.0)
   - HandyJSON (4.2.0)
+  - TimedSilver (1.1.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7.3)
   - Cache
   - HandyJSON (~> 4.2.0)
+  - TimedSilver
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - Cache
     - HandyJSON
+    - TimedSilver
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   Cache: 807c5d86d01a177f06ede9865add3aea269bbfd4
   HandyJSON: 9dfc026c7d7adc1f0f8ba8b181495f0e0763b0f4
+  TimedSilver: 07e6e9098989104d558801371c05f64bcaf354f5
 
-PODFILE CHECKSUM: d749a5987fce96085f57840089b2a3e599f5c2e9
+PODFILE CHECKSUM: e24fc5535aa1d999c66c0fccf989c9bb78b831bd
 
 COCOAPODS: 1.5.3
