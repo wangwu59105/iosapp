@@ -7,11 +7,23 @@ inhibit_all_warnings!
 
 def pods
     #Swift
+    # 网络库
     pod 'Alamofire', '~> 4.7.3'
+    # 数据缓存库
     pod 'Cache'
+    # Json解析库
     pod 'HandyJSON', '~> 4.2.0'
-    #swift 4.0的
+    #swift 4.0的 扩展库
     pod 'TimedSilver'
+    # 加载图片库
+    pod 'Kingfisher'
+    # 布局
+    pod 'SnapKit'
+    # 上拉下拉 UITabView 4.0的
+    pod 'CRRefresh'
+    #Object-c
+    pod 'SVProgressHUD', :git => 'https://github.com/SVProgressHUD/SVProgressHUD.git'#'2.2.5'
+   
 end
 
 target 'app' do

@@ -1,28 +1,52 @@
 PODS:
   - Alamofire (4.7.3)
   - Cache (5.2.0)
+  - CRRefresh (1.1.2)
   - HandyJSON (4.2.0)
+  - Kingfisher (4.10.0)
+  - SnapKit (4.0.1)
+  - SVProgressHUD (2.2.5)
   - TimedSilver (1.1.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7.3)
   - Cache
+  - CRRefresh
   - HandyJSON (~> 4.2.0)
+  - Kingfisher
+  - SnapKit
+  - SVProgressHUD (from `https://github.com/SVProgressHUD/SVProgressHUD.git`)
   - TimedSilver
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - Cache
+    - CRRefresh
     - HandyJSON
+    - Kingfisher
+    - SnapKit
     - TimedSilver
+
+EXTERNAL SOURCES:
+  SVProgressHUD:
+    :git: https://github.com/SVProgressHUD/SVProgressHUD.git
+
+CHECKOUT OPTIONS:
+  SVProgressHUD:
+    :commit: d860511141f71fa0fb40c3241a0701be06ad7838
+    :git: https://github.com/SVProgressHUD/SVProgressHUD.git
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   Cache: 807c5d86d01a177f06ede9865add3aea269bbfd4
+  CRRefresh: d2981e419e87b0868c19f8b1f8f562d8704f6db3
   HandyJSON: 9dfc026c7d7adc1f0f8ba8b181495f0e0763b0f4
+  Kingfisher: 43c4b802d8b5256cf1f4379e9cd10b329be6d3e2
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   TimedSilver: 07e6e9098989104d558801371c05f64bcaf354f5
 
-PODFILE CHECKSUM: e24fc5535aa1d999c66c0fccf989c9bb78b831bd
+PODFILE CHECKSUM: 874f4440ba71cd12fcb655234425f1e39bf14430
 
 COCOAPODS: 1.5.3

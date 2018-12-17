@@ -1,34 +1,164 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tkv-x1-IyJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="boX-Ja-sCW"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUR-Dq-N7Y">
-                                <rect key="frame" x="164" y="318" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUR-Dq-N7Y">
+                                <rect key="frame" x="153" y="48.5" width="69" height="30"/>
+                                <state key="normal" title="登录"/>
                                 <connections>
                                     <action selector="net:" destination="BYZ-38-t0r" eventType="touchUpInside" id="evW-dk-9Lh"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="简化编写" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6JW-FF-evl" customClass="UILabelPadding" customModule="app" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="20.5"/>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.64705882349999999" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9R-z6-zgQ">
+                                <rect key="frame" x="164" y="86.5" width="69" height="30"/>
+                                <state key="normal" title="普通搜索"/>
+                                <connections>
+                                    <action selector="searchController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xow-hn-5Bt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9XW-1Q-EIB">
+                                <rect key="frame" x="164" y="124.5" width="69" height="30"/>
+                                <state key="normal" title="列表搜索"/>
+                                <connections>
+                                    <action selector="searhTVController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hHP-UG-jWC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9n3-aJ-trH">
+                                <rect key="frame" x="164" y="162.5" width="69" height="30"/>
+                                <state key="normal" title="tab页"/>
+                                <connections>
+                                    <action selector="tabController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Em1-Rz-RkV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIe-eB-t15">
+                                <rect key="frame" x="164" y="200.5" width="69" height="30"/>
+                                <state key="normal" title="tab搜索页"/>
+                                <connections>
+                                    <action selector="tabSearchController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fed-3L-G5c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ey-db-g3k" userLabel="正则输入框">
+                                <rect key="frame" x="150.5" y="238" width="74" height="30"/>
+                                <state key="normal" title="输入框4d2"/>
+                                <connections>
+                                    <action selector="textField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5KJ-eu-quW"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="G8X-k2-tg6" customClass="TextFieldCounter" customModule="app" customModuleProvider="target">
+                                <rect key="frame" x="50" y="276" width="275" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="pBs-Gh-q1S"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="animate" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="ascending" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="numberTypeInt">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="regexsReturnToast" value="最多输入4位整数2位小数"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75P-Lu-MJo">
+                                <rect key="frame" x="144" y="314" width="87" height="30"/>
+                                <state key="normal" title="控件padding"/>
+                                <connections>
+                                    <action selector="padding:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aWc-pL-CCE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="9XW-1Q-EIB" firstAttribute="width" secondItem="q9R-z6-zgQ" secondAttribute="width" id="0LN-vl-qoV"/>
+                            <constraint firstItem="6JW-FF-evl" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="0P0-hz-Gol"/>
+                            <constraint firstAttribute="trailing" secondItem="9XW-1Q-EIB" secondAttribute="trailing" constant="142" id="11m-UA-39C"/>
+                            <constraint firstItem="nUR-Dq-N7Y" firstAttribute="centerX" secondItem="6JW-FF-evl" secondAttribute="centerX" id="2F0-eM-aPc"/>
+                            <constraint firstItem="nUR-Dq-N7Y" firstAttribute="top" secondItem="6JW-FF-evl" secondAttribute="bottom" constant="8" id="2I3-Sp-KNQ"/>
+                            <constraint firstItem="6JW-FF-evl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6b2-lA-Vko"/>
+                            <constraint firstAttribute="trailing" secondItem="G8X-k2-tg6" secondAttribute="trailing" constant="50" id="GDy-kw-x17"/>
+                            <constraint firstItem="7ey-db-g3k" firstAttribute="top" secondItem="FIe-eB-t15" secondAttribute="bottom" constant="7.5" id="H13-PP-Ga9"/>
+                            <constraint firstItem="q9R-z6-zgQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="FIe-eB-t15" secondAttribute="leading" id="HwX-AU-3xa"/>
+                            <constraint firstItem="9n3-aJ-trH" firstAttribute="width" secondItem="9XW-1Q-EIB" secondAttribute="width" id="PAn-2D-8Ec"/>
+                            <constraint firstItem="G8X-k2-tg6" firstAttribute="top" secondItem="7ey-db-g3k" secondAttribute="bottom" constant="8" id="RKA-i4-sSd"/>
+                            <constraint firstItem="9XW-1Q-EIB" firstAttribute="top" secondItem="q9R-z6-zgQ" secondAttribute="bottom" constant="8" id="RdI-7w-4dd"/>
+                            <constraint firstItem="q9R-z6-zgQ" firstAttribute="top" secondItem="nUR-Dq-N7Y" secondAttribute="bottom" constant="8" id="TI6-TP-PZF"/>
+                            <constraint firstItem="G8X-k2-tg6" firstAttribute="centerX" secondItem="7ey-db-g3k" secondAttribute="centerX" id="UXt-r3-cZr"/>
+                            <constraint firstItem="6JW-FF-evl" firstAttribute="top" secondItem="Tkv-x1-IyJ" secondAttribute="bottom" id="V2U-bT-sV9"/>
+                            <constraint firstItem="FIe-eB-t15" firstAttribute="width" secondItem="9n3-aJ-trH" secondAttribute="width" id="azy-Zi-fKC"/>
+                            <constraint firstItem="75P-Lu-MJo" firstAttribute="top" secondItem="G8X-k2-tg6" secondAttribute="bottom" constant="8" id="dOH-SW-Ia9"/>
+                            <constraint firstItem="q9R-z6-zgQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="164" id="eUN-P8-0dk"/>
+                            <constraint firstItem="q9R-z6-zgQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9XW-1Q-EIB" secondAttribute="leading" id="eUm-4o-wW4"/>
+                            <constraint firstAttribute="trailing" secondItem="q9R-z6-zgQ" secondAttribute="trailing" constant="142" id="efP-VC-Xec"/>
+                            <constraint firstItem="75P-Lu-MJo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fRq-6V-LT6"/>
+                            <constraint firstItem="q9R-z6-zgQ" firstAttribute="width" secondItem="nUR-Dq-N7Y" secondAttribute="width" id="gC3-ja-waj"/>
+                            <constraint firstItem="G8X-k2-tg6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="jzD-nd-5Bz"/>
+                            <constraint firstAttribute="trailing" secondItem="9n3-aJ-trH" secondAttribute="trailing" constant="142" id="kQU-rk-L0I"/>
+                            <constraint firstItem="FIe-eB-t15" firstAttribute="top" secondItem="9n3-aJ-trH" secondAttribute="bottom" constant="8" id="ldB-me-84x"/>
+                            <constraint firstAttribute="trailing" secondItem="FIe-eB-t15" secondAttribute="trailing" constant="142" id="slW-1E-lfg"/>
+                            <constraint firstItem="9n3-aJ-trH" firstAttribute="top" secondItem="9XW-1Q-EIB" secondAttribute="bottom" constant="8" id="ux6-BF-MVA"/>
+                            <constraint firstItem="q9R-z6-zgQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9n3-aJ-trH" secondAttribute="leading" id="xoC-Sy-zVG"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="paddingLabel" destination="6JW-FF-evl" id="FqK-yO-IUW"/>
+                        <outlet property="textField" destination="G8X-k2-tg6" id="awy-kp-96F"/>
+                        <outlet property="textFieldHigh" destination="pBs-Gh-q1S" id="DEt-Nz-qk8"/>
+                        <outlet property="tips" destination="6JW-FF-evl" id="lBg-1r-669"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

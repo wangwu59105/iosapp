@@ -17,6 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow.init(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let VC : ViewController = mainStoryboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        let NAV = NavigationViewController(rootViewController: VC)
+        window?.rootViewController = NAV
+        UITableView.appearance().estimatedSectionHeaderHeight = 0
+        UITableView.appearance().estimatedSectionFooterHeight = 0
+        
         return true
     }
 

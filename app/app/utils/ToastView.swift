@@ -34,7 +34,7 @@ class ToastView: UIView {
         self.frame = CGRect(x: 0, y: 0, width: tipLabel.frame.size.width+8, height: tipLabel.frame.size.height+8)
         self.layer.cornerRadius = 3.0
         self.center = CGPoint(x: SCREEN_WIDTH/2, y: SCREEN_HEIGHT/2)
-        self.backgroundColor = UIColor.black
+        self.backgroundColor = UIColor.init(ts_hexString: "333333", alpha: 0.7)
         self.addSubview(tipLabel)
     }
     
@@ -42,7 +42,7 @@ class ToastView: UIView {
     {
         var durationTime: Double = 0.0
         if duration == nil {
-            durationTime = 0.4
+            durationTime = 0.6
         }else{
             durationTime = duration!
         }
